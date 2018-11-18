@@ -1,4 +1,6 @@
-# 'open in' buttons for MacOS X Finder toolbar
+# 'Open in' buttons for macOS Finder toolbar
+
+Works on macOS Mojave.
 
 ![screenshot](src/images/screenshot.png "screenshot")
 
@@ -6,23 +8,30 @@
 
 - Terminal
 - iTerm
-- TextMate
 - Visual Studio Code
 - Sublime text
-- Atom
 
 ## How to
 - Download apps
-- copy to applications folder
-- and drag it to Finder toolbar (hold ⌘cmd)
+- Copy to Applications folder
+- and drag it to Finder toolbar (hold `⌘cmd`)
 
 ## Sublime Text
-Read [this topic](https://gist.github.com/artero/1236170 "this topic") before run "open-in-Sublime" app
+Run the following command to add a command line shortcut for Sublime Text. This is needed for the Finder button to work.
 
-## Text Mate
-Read [this](https://manual.macromates.com/en/using_textmate_from_terminal.html "this") before run the app 
+```bash
+# Sublime Text 2
+# ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
 
+# Sublime Text 3
+ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+```
 
-## Where is the magic come from
+## Visual Studio Code
+Run the following command in Visual Studio Code (`Cmd + Shift + P`)
 
-take a look in src/src folder
+```
+>Shell Command: Install 'code' command in PATH
+```
+
+Issues: Does not open the current folder when buttons are clicked without selecting a file/folder. It should open the current folder if no file/folder is selected.
