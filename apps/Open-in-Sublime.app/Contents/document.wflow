@@ -128,7 +128,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>while read file; do /usr/local/bin/sublime "$file"; done</string>
+					<string>while read file; do /usr/local/bin/subl "$file"; done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
