@@ -38,7 +38,14 @@ Run the following command in Visual Studio Code (`Cmd + Shift + P`)
 
 Give the required Permissions
 
-_Security and Privacy > Accessibility > iTerm_
+_System Preferences > Security & Privacy > Accessibility (Options on left hand side) > (Enter system password) Automation > Open-in-iTerm.app_
+
+
+## Terminal
+
+Give the required permissions
+
+_System Preferences > Security & Privacy > Accessibility (Options on left hand side) > (Enter system password) Automation > Open-in-Terminal.app_
 
 ## To Do
 - It should open the current folder if no file/folder is selected. Right now it does not open the current folder when buttons (Sublime Text, VS Code) are clicked without selecting a file/folder. For iTerm and Terminal, it opens the current folder by default, even if you have selected some folder inside the current folder and want that to open instead.
