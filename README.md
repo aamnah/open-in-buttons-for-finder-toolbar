@@ -34,4 +34,11 @@ Run the following command in Visual Studio Code (`Cmd + Shift + P`)
 >Shell Command: Install 'code' command in PATH
 ```
 
-Issues: Does not open the current folder when buttons are clicked without selecting a file/folder. It should open the current folder if no file/folder is selected.
+## iTerm
+
+Give the required Permissions
+
+_Security and Privacy > Accessibility > iTerm_
+
+## To Do
+- It should open the current folder if no file/folder is selected. Right now it does not open the current folder when buttons (Sublime Text, VS Code) are clicked without selecting a file/folder. For iTerm and Terminal, it opens the current folder by default, even if you have selected some folder inside the current folder and want that to open instead.
